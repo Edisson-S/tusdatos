@@ -84,7 +84,7 @@ cities.map((city)=>{
 }
 
 cities.map((city)=>{ids.push(city.APIId)})
-fetchAsync(`http://api.openweathermap.org/data/2.5/group?id=${ids}&lang=es&appid=96c21769e6ebad66161efd5f78e9ead8`).then(response=>{
+fetchAsync(`http://api.openweathermap.org/data/2.5/group?id=${ids}&lang=es&appid=`).then(response=>{
     let element=document.getElementById("Loading")
     element.remove()
     APIResponse=response; 
