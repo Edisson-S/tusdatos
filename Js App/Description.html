@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Styles.css">
+
+    <title>App del clima</title>
+</head>
+<body class= "bck">
+
+<h1 class="font-title" id="title"></h1>
+<h5 class="font-subtitle" id="subtitle"></h5>
+<label class="font-subtitle" for="temp" id="temp-label">Temperatura</label>
+<input type="checkbox" name="temp" id="temp-checkbox" onclick="evaluateTemp()" checked>
+<label class="font-subtitle" for="hum">Humedad</label>
+<input type="checkbox" name="hum" id="hum-checkbox" onclick="evaluateHum()" checked>
+<div class="details-box">
+  <h3 class="details-title" id="condition">Pocas Nubes</h3>
+  <img class="details-image" id="details-image"/>
+  <h3 class="details-description" id="temp"></h3>
+  <h3 class="details-description" id="hum"></h3>
+</div>
+<script src="Description.js"></script>
+</body>
+</html>
